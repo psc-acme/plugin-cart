@@ -1,0 +1,43 @@
+{
+    "name": "psc-acme/plugin-cart",
+    "description": "Package plugin-cart for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\PluginCart\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "league/flysystem": "^3.0",
+        "aws/aws-sdk-php": "^3.332",
+        "symfony/cache": "^7.0",
+        "nesbot/carbon": "^2.72",
+        "symfony/http-foundation": "^7.0",
+        "vlucas/phpdotenv": "^5.0",
+        "psc-acme/encoder-order": "^1.0",
+        "psc-acme/lib-cart": "^1.0"
+    },
+    "require-dev": {
+        "rector/rector": "^1.0",
+        "webforge/object-asserter": "^2.0.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
